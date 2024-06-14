@@ -12,6 +12,15 @@
         margin: 0;
         padding: 0;
         line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
       }
 
       header {
@@ -47,6 +56,7 @@
 
       main {
         padding: 1rem;
+        flex: 1;
       }
 
       section {
@@ -101,75 +111,82 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>東京旅遊攻略</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">首頁</a></li>
-          <li><a href="#attractions">景點介紹</a></li>
-          <li><a href="#food">美食推薦</a></li>
-          <li><a href="#transport">交通指南</a></li>
-          <li><a href="#contact">聯絡我們</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="home">
-        <h2>歡迎來到東京旅遊攻略</h2>
-        <p>這裡有最新最全的東京旅遊資訊，幫助你暢遊東京。</p>
-      </section>
-      <section id="attractions">
-        <h2>景點介紹</h2>
-        <article>
-          <h3>東京迪士尼</h3>
-          <img src="img/東京迪士尼.jpg" alt="東京迪士尼" />
-          <a href="https://www.tokyodisneyresort.jp/tc/index.html"
-            >東京迪士尼</a
+    <div class="wrapper">
+      <header>
+        <h1>東京旅遊攻略</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#attractions">景點介紹</a></li>
+            <li><a href="#food">美食推薦</a></li>
+            <li><a href="#transport">交通指南</a></li>
+            <li><a href="#contact">聯絡我們</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="home">
+          <h2>歡迎來到東京旅遊攻略</h2>
+          <p>這裡有最新最全的東京旅遊資訊，幫助你暢遊東京。</p>
+        </section>
+        <section id="attractions">
+          <h2>景點介紹</h2>
+          <article>
+            <h3>東京迪士尼</h3>
+            <img src="img/東京迪士尼.jpg" alt="東京迪士尼" />
+            <a href="https://www.tokyodisneyresort.jp/tc/index.html"
+              >東京迪士尼</a
+            >
+            <p>
+              夢想與魔法的王國 —
+              體驗壯觀的遊行表演與遊樂設施等，展開一段充滿感動與驚奇的夢幻冒險。
+              東京迪士尼樂園由7座主題區域組成，歡迎在此度過夢幻般的一天。
+            </p>
+          </article>
+          <article>
+            <h3>淺草寺</h3>
+            <img src="sensoji-temple.jpg" alt="淺草寺" />
+            <p>淺草寺是東京最古老的寺廟之一，充滿歷史氛圍。</p>
+          </article>
+        </section>
+        <section id="food">
+          <h2>美食推薦</h2>
+          <article>
+            <h3>壽司</h3>
+            <img src="sushi.jpg" alt="壽司" />
+            <p>在東京享用新鮮的壽司，體驗頂級的日本料理。</p>
+          </article>
+          <article>
+            <h3>拉麵</h3>
+            <img src="ramen.jpg" alt="拉麵" />
+            <p>拉麵是東京街頭美食的代表之一，各種口味應有盡有。</p>
+          </article>
+        </section>
+        <section id="transport">
+          <h2>交通指南</h2>
+          <a
+            href="https://www.kkday.com/zh-tw/blog/3514/asia-japan-tokyo-transport"
+            >東京地鐵這樣搭！<br
+          /></a>
+
+          <a href="https://www.kotsu.metro.tokyo.jp/ch_h/tips/bus_ride.html"
+            >東京公車這樣搭！<br
+          /></a>
+          <a href="https://www.tokyostationcity.com/tc/introduction/"
+            >東京火車這樣搭！</a
           >
+          <p>東京擁有便捷的公共交通系統，包括地鐵、巴士和火車。</p>
+        </section>
+        <section id="contact">
+          <h2>聯絡我們</h2>
           <p>
-            夢想與魔法的王國 —
-            體驗壯觀的遊行表演與遊樂設施等，展開一段充滿感動與驚奇的夢幻冒險。
-            東京迪士尼樂園由7座主題區域組成，歡迎在此度過夢幻般的一天。
+            如果你有任何問題或建議，請<a href="mailto:info@tokyotravel.com"
+              >發郵件給我們</a
+            >。
           </p>
-        </article>
-        <article>
-          <h3>淺草寺</h3>
-          <img src="sensoji-temple.jpg" alt="淺草寺" />
-          <p>淺草寺是東京最古老的寺廟之一，充滿歷史氛圍。</p>
-        </article>
-      </section>
-      <section id="food">
-        <h2>美食推薦</h2>
-        <article>
-          <h3>壽司</h3>
-          <img src="sushi.jpg" alt="壽司" />
-          <p>在東京享用新鮮的壽司，體驗頂級的日本料理。</p>
-        </article>
-        <article>
-          <h3>拉麵</h3>
-          <img src="ramen.jpg" alt="拉麵" />
-          <p>拉麵是東京街頭美食的代表之一，各種口味應有盡有。</p>
-        </article>
-      </section>
-      <section id="transport">
-        <h2>交通指南</h2>
-        <a href="https://www.kkday.com/zh-tw/blog/3514/asia-japan-tokyo-transport"
-            >東京地鐵這樣搭！</a
-        <a href="https://www.kotsu.metro.tokyo.jp/ch_h/tips/bus_ride.html"
-            >東京公車這樣搭！</a
-        <a href="https://www.kkday.com/zh-tw/blog/3514/asia-japan-tokyo-transport"
-            >東京地鐵這樣搭！</a
-        <p>東京擁有便捷的公共交通系統，包括地鐵、巴士和火車。</p>
-      </section>
-      <section id="contact">
-        <h2>聯絡我們</h2>
-        <p>
-          如果你有任何問題或建議，請<a href="mailto:info@tokyotravel.com"
-            >發郵件給我們</a
-          >。
-        </p>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
     <footer>
       <p>&copy; 2024 東京旅遊攻略. All rights reserved.</p>
     </footer>
