@@ -57,6 +57,38 @@
       main {
         padding: 1rem;
         flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .content-wrapper {
+        max-width: 60%;
+        text-align: center;
+      }
+
+      .side-images {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .side-images.left {
+        left: 0;
+      }
+
+      .side-images.right {
+        right: 0;
+      }
+
+      .side-images img {
+        margin-bottom: 1rem;
+        max-width: 100%;
       }
 
       section {
@@ -93,6 +125,10 @@
         nav ul li {
           margin: 0.5rem 0;
         }
+
+        .side-images {
+          display: none;
+        }
       }
 
       @media (max-width: 480px) {
@@ -125,66 +161,85 @@
         </nav>
       </header>
       <main>
-        <section id="home">
-          <h2>歡迎來到東京旅遊攻略</h2>
-          <p>這裡有最新最全的東京旅遊資訊，幫助你暢遊東京。</p>
-        </section>
-        <section id="attractions">
-          <h2>景點介紹</h2>
-          <article>
-            <h3>東京迪士尼</h3>
-            <img src="img/東京迪士尼.jpg" alt="東京迪士尼" />
-            <a href="https://www.tokyodisneyresort.jp/tc/index.html"
-              >東京迪士尼</a
+        <div class="side-images left">
+          <img src="img/tokyo_tower.jpg" alt="東京鐵塔" />
+          <img src="img/sensoji-temple.jpg" alt="淺草寺" />
+        </div>
+        <div class="content-wrapper">
+          <section id="home">
+            <h2>歡迎來到東京旅遊攻略</h2>
+            <p>這裡有最新最全的東京旅遊資訊，幫助你暢遊東京。</p>
+          </section>
+          <section id="attractions">
+            <h2>景點介紹</h2>
+            <article>
+              <h3>東京迪士尼</h3>
+              <img src="img/東京迪士尼.jpg" alt="東京迪士尼" />
+              <a href="https://www.tokyodisneyresort.jp/tc/index.html"
+                >東京迪士尼</a
+              >
+              <p>
+                夢想與魔法的王國 —
+                體驗壯觀的遊行表演與遊樂設施等，展開一段充滿感動與驚奇的夢幻冒險。
+                東京迪士尼樂園由7座主題區域組成，歡迎在此度過夢幻般的一天。
+              </p>
+            </article>
+            <article>
+              <h3>淺草寺</h3>
+              <img src="img/淺草寺.jpg" alt="淺草寺" />
+              <a href="https://www.gltjp.com/zh-hant/article/item/10068/"
+                >淺草寺</a
+              >
+              <p>
+                東京都內歷史最悠久的寺院淺草寺，每年參拜人數超過3,000萬人次！
+                寺院建於628年。據說在戰國時代，德川家康曾為了在爭奪天下的重要戰役「關原之戰」中取得勝利而特地來此祈願。
+                寺院內有作為淺草寺象徵的「雷門」，以及被指定為重要文化財產的「淺草寺傳法院」等多個代表日本歷史文化之獨特魅力的建築。
+                從雷門到正殿全長約 250公尺
+                的「仲見世通」上，土產店和小吃攤等各種店鋪鱗次櫛比。可在人潮川流不息的商店街上購買和菓子、日本茶以及能感受日本傳統文化的土特產等伴手禮，盡情享受東京下町特有的懷舊風情。
+                如此滿載日本歷史及傳統文化的「淺草寺」，是造訪東京必去一次的魅力景點。
+              </p>
+            </article>
+          </section>
+          <section id="food">
+            <h2>美食推薦</h2>
+            <article>
+              <h3>壽司</h3>
+              <img src="img/sushi.jpg" alt="壽司" />
+              <p>在東京享用新鮮的壽司，體驗頂級的日本料理。</p>
+            </article>
+            <article>
+              <h3>拉麵</h3>
+              <img src="img/ramen.jpg" alt="拉麵" />
+              <p>拉麵是東京街頭美食的代表之一，各種口味應有盡有。</p>
+            </article>
+          </section>
+          <section id="transport">
+            <h2>交通指南</h2>
+            <a
+              href="https://www.kkday.com/zh-tw/blog/3514/asia-japan-tokyo-transport"
+              >東京地鐵這樣搭！<br
+            /></a>
+            <a href="https://www.kotsu.metro.tokyo.jp/ch_h/tips/bus_ride.html"
+              >東京公車這樣搭！<br
+            /></a>
+            <a href="https://www.tokyostationcity.com/tc/introduction/"
+              >東京火車這樣搭！</a
             >
+            <p>東京擁有便捷的公共交通系統，包括地鐵、巴士和火車。</p>
+          </section>
+          <section id="contact">
+            <h2>聯絡我們</h2>
             <p>
-              夢想與魔法的王國 —
-              體驗壯觀的遊行表演與遊樂設施等，展開一段充滿感動與驚奇的夢幻冒險。
-              東京迪士尼樂園由7座主題區域組成，歡迎在此度過夢幻般的一天。
+              如果你有任何問題或建議，請<a href="mailto:info@tokyotravel.com"
+                >發郵件給我們</a
+              >。
             </p>
-          </article>
-          <article>
-            <h3>淺草寺</h3>
-            <img src="sensoji-temple.jpg" alt="淺草寺" />
-            <p>淺草寺是東京最古老的寺廟之一，充滿歷史氛圍。</p>
-          </article>
-        </section>
-        <section id="food">
-          <h2>美食推薦</h2>
-          <article>
-            <h3>壽司</h3>
-            <img src="sushi.jpg" alt="壽司" />
-            <p>在東京享用新鮮的壽司，體驗頂級的日本料理。</p>
-          </article>
-          <article>
-            <h3>拉麵</h3>
-            <img src="ramen.jpg" alt="拉麵" />
-            <p>拉麵是東京街頭美食的代表之一，各種口味應有盡有。</p>
-          </article>
-        </section>
-        <section id="transport">
-          <h2>交通指南</h2>
-          <a
-            href="https://www.kkday.com/zh-tw/blog/3514/asia-japan-tokyo-transport"
-            >東京地鐵這樣搭！<br
-          /></a>
-
-          <a href="https://www.kotsu.metro.tokyo.jp/ch_h/tips/bus_ride.html"
-            >東京公車這樣搭！<br
-          /></a>
-          <a href="https://www.tokyostationcity.com/tc/introduction/"
-            >東京火車這樣搭！</a
-          >
-          <p>東京擁有便捷的公共交通系統，包括地鐵、巴士和火車。</p>
-        </section>
-        <section id="contact">
-          <h2>聯絡我們</h2>
-          <p>
-            如果你有任何問題或建議，請<a href="mailto:info@tokyotravel.com"
-              >發郵件給我們</a
-            >。
-          </p>
-        </section>
+          </section>
+        </div>
+        <div class="side-images right">
+          <img src="img/sushi.jpg" alt="壽司" />
+          <img src="img/ramen.jpg" alt="拉麵" />
+        </div>
       </main>
     </div>
     <footer>
